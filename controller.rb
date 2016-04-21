@@ -157,6 +157,10 @@ post '/fight!' do
 	when "fight!"
 		@question = "You run outside to fight the wolf. You are able to catch it by surprise and injure it! It runs away whimpering. You survived!"
 
+		erb :two_choices
+	end
+
+end
 
 
 
