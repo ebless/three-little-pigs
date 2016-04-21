@@ -4,7 +4,7 @@
 		<br>
 		<br>
 		<h2><%= @question %></h2>
-		<form method="POST" action="/first_choice">
+		<form method="POST" action=<%= @action %> >
 			<label for=<%= @choice_1 %> >
 				<input type="radio" name="choice" value=<%= @choice_1 %> > <%= @choice_1.capitalize %>
 			</label><br>
