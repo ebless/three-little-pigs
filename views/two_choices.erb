@@ -3,14 +3,14 @@
 		<h3>This is a choose your own adventure story based on the Three Little Pigs.</h3>
 		<br>
 		<br>
-		<h2><%= @question %></h2>
-		<form method="POST" action=<%= @action %> >
-			<label for=<%= @choice_1 %> >
-				<input type="radio" name="choice" value=<%= @choice_1 %> > <%= @choice_1.capitalize %>
+		<h2><%= @data[:question] %></h2>
+		<form method="POST" action=<%= @data[:action] %> >
+			<label for=<%= @data[:choices][0] %> >
+				<input type="radio" name="choice" value=<%= @data[:choices][0] %> > <%= @data[:choices][0].capitalize %>
 			</label><br>
-			<label for= <%= @choice_2 %> >
-				<input type="radio" name="choice" value=<%= @choice_2 %> > <%= @choice_2.capitalize %>
-			</label><br><br>
+			<label for= <%= @data[:choices][1] %> >
+				<input type="radio" name="choice" value=<%= @data[:choices][1] %> > <%= @data[:choices][1].capitalize %>
+			</label><br>
 			<input type="submit" class="btn btn-primary">
 		</form>
 	</div>
